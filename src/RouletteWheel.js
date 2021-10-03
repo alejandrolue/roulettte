@@ -67,9 +67,9 @@ function RouletteWheel() {
         setItems(newItems)
         setDisabled(true)
 
-        if (prizeNumber >= 18) {
+        if (prizeNumber >= 19) {
             setWins(wins + 1)
-            setBudget(budget + 100)
+            setBudget(budget + 10)
             const newBudget = [...budgetList, budget]
             const newWager = [...wagerList, wager]
             setWagerList(newWager)
@@ -77,7 +77,7 @@ function RouletteWheel() {
             setBudgetList(newBudget)
         } else {
             setLoses(loses + 1)
-            setBudget(budget - 100)
+            setBudget(budget - 10)
             const newBudget = [...budgetList, budget]
             const newWager = [...wagerList, wager]
 
