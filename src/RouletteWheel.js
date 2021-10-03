@@ -47,7 +47,7 @@ function RouletteWheel() {
     ]
     const [mustSpin, setMustSpin] = useState(false)
     const [budget, setBudget] = useState(0)
-    const [wager, setWager] = useState(100)
+    const [wager, setWager] = useState(10)
     const [prizeNumber, setPrizeNumber] = useState(0)
     const [items, setItems] = useState([]);
     const [budgetList, setBudgetList] = useState([])
@@ -100,7 +100,7 @@ function RouletteWheel() {
                 noValidate
                 autoComplete="off"
             >
-                <TextField id="outlined-number" label="Wager" variant="standard" value={wager}
+                <TextField id="outlined-number" label="Bet" variant="standard" value={wager}
                            onChange={(event) => setWager(event.target.value)} disabled/>
                 <TextField id="outlined-number" label="Budget" variant="standard" value={budget}
                            onChange={(event) => setBudget(event.target.value)} disabled={disabled}/>
